@@ -1513,21 +1513,27 @@
     padding-bottom: 30px !important;
   }
 }
-.price-area__range .form-range {
+.price-area__range .imon {
+  color: rgba(36, 106, 211, 0.897);
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  padding: 8px;
+}
+.price-area__range input[type=range] {
   width: 100%;
-  margin-top: 10%;
+  margin-top: 10px;
 }
-@media (max-width: 1024px) {
-  .price-area__range .form-range {
-    width: 60%;
-    margin-top: 4%;
-  }
+.price-area__range #rangeValue {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
-@media (max-width: 425px) and (min-width: 320px) {
-  .price-area__range .form-range {
-    width: 80%;
-    margin-top: 9%;
-  }
+.price-area__range input {
+  width: 100%;
 }
 .price-area__range .button {
   margin-top: 50px;
