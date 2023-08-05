@@ -7,6 +7,23 @@ $desktop: '(min-width: 1281px)';
     padding: 0;
     box-sizing: border-box;
 }
+.top-btn button{
+    --bs-btn-color: #0077FF;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color:#0077FF;
+    --bs-btn-hover-bg: #0077FF1A;
+    --bs-btn-bg: #0077FF1A;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #FFF;
+    --bs-btn-active-bg: #0077FF;
+    --bs-btn-active-border-color: #none;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #198754;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: none;
+    --bs-gradient: none;
+}
 .btn-outline-success {
     --bs-btn-color: #ffffff;
     --bs-btn-border-color: none;
@@ -1255,6 +1272,18 @@ $desktop: '(min-width: 1281px)';
         }
     }
 }
+.arrow-icon {
+    position: absolute;
+    transform: translateY(-50%);
+    margin-top: 35.5px;
+    padding: 10px 13px;
+    border-radius: 4px;
+    background: #07F;
+    margin-left: -55px;
+    @media (max-width:1024px) {
+        margin-top: 35px;
+    }
+  }
 .icon-input {
     position: relative;
     top: 30px;
@@ -1435,6 +1464,16 @@ input[type="text"] {
     height: auto;
     border-radius: 35px;
     margin-top: 140px;
+    @media (max-width:1440px) {
+        text-align: center;
+        background-image: url(../img/last.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 80px 0;
+        height: auto;
+        border-radius: 35px;
+        margin-top: 140px;
+    }
     @media #{$tab_device} {
         font-size: 44px;
         line-height: 60px;
